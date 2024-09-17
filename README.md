@@ -19,3 +19,10 @@ def firstAlphabet(text):
       result += c
   print (result)
 firstAlphabet("antonio ha abierto el entorno")
+
+firstAlphabet("antonio ha abierto el entorno")
+def tabla_1():
+  n_tabla=input("Elige una tabla: ")
+  print (""+"Has elegido la tabla del"+n_tabla)
+
+tabla_1()
