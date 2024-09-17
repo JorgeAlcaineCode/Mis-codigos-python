@@ -11,3 +11,11 @@ def calculadora(num,ber):
     print ("resto1",num % ber)
     print ("resto2",ber % num)
 calculadora(1,2)
+
+def firstAlphabet(text):
+  result = ""
+  for c in text:
+    if c not in ("abcde"):
+      result += c
+  print (result)
+firstAlphabet("antonio ha abierto el entorno")
