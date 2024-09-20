@@ -1,0 +1,6 @@
+def tabla2():
+  n_tabla=input("¿Que tabla deseas? (1-10):")
+  for ite in range(1,11):
+    print(n_tabla+" x "+str(ite)+" = " +str(int(n_tabla)*ite))
+    
+tabla2()
