@@ -1,0 +1,7 @@
+def firstAlphabet(text):
+  result = ""
+  for c in text:
+    if c not in ("abcde"):
+      result += c
+  print (result)
+firstAlphabet("antonio ha abierto el entorno")
