@@ -1,0 +1,4 @@
+def saludador():
+  Nombre = input("¿Cual es tu nombre?")
+  print ("Hola " + Nombre )
+saludador()
