@@ -1,0 +1,7 @@
+def conversador():
+  Nombre = input("¿Cual es tu nombre?")
+  Edad = input("¿Cuantos años tienes?")
+  for char in Edad:
+    if char not in ("0123456789"):
+      print("Eso no es un número")
+conversador()
