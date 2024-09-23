@@ -1,6 +1,6 @@
-def cuadrado():
+def cuadrado2():
   dimensiones = input("¿Que dimensiones quieres?")
-  for cont in range (1,int(dimensiones)+1):
-    for c in range (1,int(dimensiones)+1):
-      print ("*")
-cuadrado()
+  for filas in range (1,int(dimensiones)+1):
+      print ("*"*int(dimensiones))
+cuadrado2()
+
