@@ -1,0 +1,13 @@
+#Este programa dibuja triangulos
+#Usa el bucle for
+def triangulo():
+  dimensiones = input("¿Que dimensiones quieres? (1-10)")
+#Esta bariable es de iteración(es para repetirla).
+  ite= (1)
+#Esto es un bucle anidado (nested).
+  for filas in range (1,int(dimensiones)+1):
+    for columnas in range (1,int(ite)+1):
+      print ('*',end=' ')
+    ite += (1)
+    print(" ") #(n hace un salto de linea.)
+triangulo()
