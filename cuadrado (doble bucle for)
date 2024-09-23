@@ -1,0 +1,10 @@
+#Este programa dibuja cuadrados
+#Usa el bucle for
+def cuadrado():
+  dimensiones = input("¿Que dimensiones quieres? (1-10)")
+#Esto es un bucle anidado (nested).
+  for filas in range (1,int(dimensiones)+1):
+    for columnas in range (1,int(dimensiones)+1):
+      print ('*',end='*')
+    print(" ") #(n hace un salto de linea.)
+cuadrado()
