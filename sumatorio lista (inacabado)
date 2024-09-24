@@ -1,0 +1,7 @@
+def sumatoriolista():
+  List = [int(input("¿Que números quieres sumar?"))]
+  result = 0
+  for a in List:
+    result += (a)
+  print(result)
+sumatoriolista()
