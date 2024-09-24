@@ -1,0 +1,7 @@
+#Este simple código mantiene una conversación con una persona de tu elección.
+def Saludador(name,std):
+  print(" Hola soy "+name+" tengo "+std+" años ")
+  result = input("¿Como te llamas?")
+  result2 = input("¿Cuantos años tienes tú?")
+  print(" Hola "+result+" tienes "+result2+" años ")
+Saludador("Marquitos","30")
