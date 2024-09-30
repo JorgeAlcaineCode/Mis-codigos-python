@@ -29,3 +29,19 @@ def sumatorioselecto():
     result += (a)
   print(result)
 sumatorioselecto()
+#Este código permite sumar hasta el número que quieras y 
+#clasifica los números en pares e impares.
+def sumatorio_par_impar():
+  result_par = 0
+  result_impar = 0
+  numeroinput = int(input("¿haste que número quieres sumar?"))
+  for a in range(1,numeroinput+1):
+    if a%2 == 0:
+      result_par += a
+      print(str(a)+" Es par ")
+    else:
+      result_impar += a
+      print(str(a)+" Es impar ")
+  print("La suma de los pares es: "+str(result_par))
+  print("La suma de los impares es: "+str(result_impar))
+sumatorio_par_impar()
