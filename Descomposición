@@ -4,7 +4,7 @@ def Descomposicion():
   while result != 0:
     if result % ite == 0:
       result = (result / ite)
-      print(" dividido entre "+str(result))
+      print(" dividido entre "+str(ite))
       print("el resultado de la division es: "+str(result))
     else :
       ite +=(1)
