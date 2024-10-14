@@ -6,6 +6,6 @@ def sumaymedia():
         suma = suma + a
     print("La suma vale "+ str(suma))
     #Float convierte una variable en un número real.
-    media= float(suma)/float(cont)
+    media= float(suma)/cont
     print("La media vale "+ str(media))
 sumaymedia()
