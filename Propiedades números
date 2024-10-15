@@ -2,15 +2,23 @@
 def propiedades_numeros():
     #Variable acumuladora
     suma = 0
-    mayor = 0
-    menor = 0
+    a = int(input("Dime un número entero"))
+    suma += a
+    mayor = a
+    menor = a
     for cont in range(1,6):
         a = int(input("Dime un número entero"))
         suma = suma + a
+        if mayor < a:
+            mayor = a
+        elif menor > a:
+            menor = a
     print("La suma vale "+ str(suma))
     #Float convierte una variable en un número real.
     media= float(suma)/cont
     M_m= mayor-menor
+    print("El mayor es "+str(mayor))
+    print("El menor es "+str(menor))
     print("La media vale "+ str(media))
-    print("El mayor menos el menor es: "+)
+    print("El mayor menos el menor es: "+ str(mayor-menor))
 propiedades_numeros()
