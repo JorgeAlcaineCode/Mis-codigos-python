@@ -19,6 +19,6 @@ def propiedades_numeros():
     M_m= mayor-menor
     print("El mayor es "+str(mayor))
     print("El menor es "+str(menor))
-    print("La media vale "+ (str(media)+1))
-    print("El mayor menos el menor es: "+ str(mayor-menor))
+    print("La media vale "+ ((str(media)+1)))
+    print("El mayor menos el menor es: "+ str(M_m))
 propiedades_numeros()
