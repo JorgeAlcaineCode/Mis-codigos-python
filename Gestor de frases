@@ -1,0 +1,16 @@
+def GestorDeFrases():
+    frase = str(int("Inserta una frase"))
+    palabra = str(int("¿Que palabra quieres cambiar?"))
+    reemplazo = str(int("Que palabra quieres sustituirla"))
+    result =" "
+    vesel = " "
+    for (a in frase):
+        if a == " ":
+            for (s in vessel):
+                if (s == palabra):
+                    frase += reemplazo
+        else:
+            vesel += a
+            frase += a
+        print(frase)
+GestorDeFrases()
