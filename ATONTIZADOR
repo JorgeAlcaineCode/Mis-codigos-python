@@ -1,0 +1,12 @@
+#guardamos una palabra y la guardamos
+def atontizador():
+    i = int(0)
+    palabra= raw_input("Una palabra con muchas vocales")
+    for cont in range(0,len(palabra)+1):
+        if (cont in "AEIOUaeiou"):
+            print ("U")
+            i += 1
+        else:
+            print(palabra[i])
+            i += 1
+atontizador()
