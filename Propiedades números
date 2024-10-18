@@ -15,10 +15,11 @@ def propiedades_numeros():
             menor = a
     print("La suma vale "+ str(suma))
     #Float convierte una variable en un número real.
-    media= float(suma)/cont
-    M_m= mayor-menor
+    media= float(suma)/(cont+1)
+    M_m= (int(mayor)-int(menor))
+    print("El mayor menos el menor es: "+ str(M_m))
     print("El mayor es "+str(mayor))
     print("El menor es "+str(menor))
-    print("La media vale "+ ((str(media)+1)))
-    print("El mayor menos el menor es: "+ str(M_m))
+    print("La media vale "+str(media))
+
 propiedades_numeros()
