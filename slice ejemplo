@@ -1,0 +1,8 @@
+def slic():
+    palabra= raw_input("Dime una frase")
+    prin = int(input("Donde empiezo"))
+    fin = int(input("Donde acabo"))
+    print(palabra[prin:fin])
+    
+    
+slic()
