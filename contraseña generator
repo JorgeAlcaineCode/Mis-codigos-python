@@ -1,0 +1,10 @@
+def Contrasenia():
+    nombre= raw_input("Dime tu nombre")
+    apellido= raw_input("Dime tu apellido")
+    apelido= raw_input("Dime tu segundo apellido")
+    anio= raw_input("Dime tu año de nacimiento")
+    usuario = str(nombre[0:3]+apellido[0:3]+apelido[0:3]+anio[2:4])
+    print("USUARIO:" +str(usuario))
+    
+    
+Contrasenia()
