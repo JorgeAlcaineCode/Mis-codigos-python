@@ -1,0 +1,5 @@
+def Mayusc():
+    text= raw_input("Dime cualquier palabra")
+    print(text.upper())
+    
+Mayusc()
