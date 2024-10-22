@@ -1,0 +1,7 @@
+#Dividimos un texto por caracteres determinados.
+def spliteador():
+    frase= raw_input("Dime algo inteligente")
+    nueva_frase = frase.split()
+    print (nueva_frase)
+        
+spliteador()
