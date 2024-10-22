@@ -1,0 +1,7 @@
+#Quitamos los espacios al principio y al final
+def stri():
+    frase= raw_input("Dime su edad")
+    nueva_frase = (frase.strip()))
+    print (nueva_frase)
+        
+stri()
