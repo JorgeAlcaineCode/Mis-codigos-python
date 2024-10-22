@@ -1,0 +1,8 @@
+#Uso del metodo format
+def formateador():
+    nombre= raw_input("Nombre: ")
+    edad= raw_inputSergio("Edad: ")
+    nueva_frase = ("Buenos días me llamo {} y tengo {} años".format(nombre,edad))
+    print (nueva_frase)
+        
+formateador()
