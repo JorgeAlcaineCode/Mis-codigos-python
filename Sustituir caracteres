@@ -1,0 +1,13 @@
+#Sustitulle los caracteres por otro o por palabras de tu elección
+def substitute():
+    result = " "
+    frase = raw_input("Dime una frase")
+    borrar = raw_input("¿Que caracteres quieres borrar?")
+    reemplazo= raw_input("¿Por que lo quieres sustituir?")
+    for a in frase:
+        if a not in borrar:
+            result += a
+        else:
+            result += reemplazo
+    print (result)
+substitute()
