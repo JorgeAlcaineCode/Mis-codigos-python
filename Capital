@@ -1,0 +1,11 @@
+def capit():
+    result = " "
+    frase = raw_input("Dime una frase")
+    borrar = raw_input("¿Que caracteres quieres en mayuscula?")
+    for a in frase:
+        if a not in borrar:
+            result += a
+        else:
+            result += a.capitalize()
+    print (result)
+capit()
