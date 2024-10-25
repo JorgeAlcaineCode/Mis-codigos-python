@@ -1,12 +1,12 @@
 #Este código permite borrar caracteres que tu le digas.
 def borrador():
-    dele = raw_input("Que caracteres no quieres dentro de la frase")
-    st = raw_input("Dime una frase")
     result = " "
-    for df in st:
-        if df in dele:
-            result += " "
+    frase = raw_input("Dime una frase")
+    borrar = raw_input("¿Que caracteres quieres borrar?")
+    for a in frase:
+        if a not in borrar:
+            result += a
         else:
-            result += str(df)
+            result += " "
     print (result)
 borrador()
