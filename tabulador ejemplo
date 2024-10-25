@@ -1,0 +1,6 @@
+def tabulaciones():
+    print("\tAba\tRodríguez\tMeléndez\t9\n")
+    print("\tPedro\tRolmo\tSimpson\t8\n")
+    print("\tAba\tRodríguez\tMeléndez\t5\n")
+    print("\tAba\tRodríguez\tMeléndez\t1\n")
+tabulaciones()
