@@ -1,0 +1,6 @@
+def extension():
+    result = " "
+    frase = raw_input("Dime una frase")
+    result += frase[3,len(frase)+1]
+    print (result)
+extension()
