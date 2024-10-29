@@ -1,0 +1,26 @@
+#vamos a hacer un ejercicio que genere al azar un número entre 1 y 6.
+import random
+import time
+def dado():
+    one = 0
+    two = 0
+    three = 0
+    four = 0
+    five = 0
+    six = 0
+    for cont in range(1,10001):
+        tirada = int(1+random.random()*10%6)
+        if tirada == 1:
+            one += 1
+        if tirada == 2:
+            two += 1
+        if tirada == 3:
+            three += 1
+        if tirada == 4:
+            four += 1
+        if tirada == 5:
+            five += 1
+        if tirada == 6:
+            six += 1
+    print(str(one),str(two),str(three),str(four),str(five),str(six))
+dado()
