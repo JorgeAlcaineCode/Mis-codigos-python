@@ -1,0 +1,20 @@
+#un programa en el que el usuario debe adivinar el numero que el ordenador
+#ha elegido al azar.
+import random
+import time
+def adivina():
+    semilla = time.time()
+    aleatorio =random.seed(semilla)
+    numero = int(random.random()*10)%10+1
+    print (str(numero))
+    print("He pensado un número aleatorio")
+    respuesta = raw_input("¿Que número crees que es?")
+    while(str(numero) != respuesta):
+        if (respuesta < numero):
+            print("El número es mayor")
+            respuesta = raw_input("¿Que número crees que es?")
+        else:
+            print("El número es menor")
+            respuesta = raw_input("¿Que número crees que es?")
+    print("Has acertado")
+adivina()
