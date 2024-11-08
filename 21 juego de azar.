@@ -1,0 +1,45 @@
+#El objetivo del juego es quedarte lo más cerca posible del 10 tirando hasta que
+#te plantes o se pases.
+#Gana quien se quede más cerca de 21 o lo iguale.
+
+import random
+import time
+def juego():
+    semilla = time.time()
+    aleatorio =random.seed(semilla)
+    resul = 0
+    itera = 0
+    resul = 0
+    resulm = 0
+    ans = "s"
+    voluntad = "."
+    print("El que se quede más cerca de 21 gana.")
+    while(ans == "s" and resul <= 21 and resulm <= 21):
+        if (resulm < 18):
+            numero = int(random.random()*10)%6+1
+            resulm += numero
+            print (str(numero))
+            print ("mi puntuación es: "+str(resulm))
+        else:
+            print("Yo me planto")
+        voluntad = raw_input("Pulsa int para tirar")
+        numero = int(random.random()*10)%6+1
+        resul += numero
+        print (str(numero))
+        print ("Tu puntuación es: "+str(resul))
+        itera += 1
+        if (resul >= 21 or resul >= 21):
+            ans = "n"
+        else:
+            ans = raw_input("Sigues o No (s/n): ")
+    if (resulm > 21):
+        print("Tu ganas")
+    elif (resul == 21):
+        print ("Tu ganas")
+    elif (resulm == resul):
+        print("Empate")
+    elif(21-resul < 21-resulm):
+        print ("Tu ganas")
+    else:
+        print("Yo gano")
+juego()
