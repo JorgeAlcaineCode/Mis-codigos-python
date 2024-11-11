@@ -15,7 +15,7 @@ def juego():
     voluntad = "."
     print("El que se quede más cerca de 21 gana.")
     while(ans == "s" and resul <= 21 and resulm <= 21):
-        if (resulm < 18):
+        if (resulm < 17):
             numero = int(random.random()*10)%6+1
             resulm += numero
             print (str(numero))
