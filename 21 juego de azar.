@@ -8,7 +8,6 @@ def juego():
     semilla = time.time()
     aleatorio =random.seed(semilla)
     resul = 0
-    itera = 0
     resul = 0
     resulm = 0
     ans = "s"
