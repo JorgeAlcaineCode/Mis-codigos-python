@@ -32,14 +32,10 @@ def juego():
             ans = "n"
         else:
             ans = raw_input("Sigues o No (s/n): ")
-    if (resulm > 21):
-        print("Tu ganas")
-    elif (resul == 21):
+    if (resulm > 21 or resul == 21 or 21-resul < 21-resulm):
         print ("Tu ganas")
     elif (resulm == resul):
         print("Empate")
-    elif(21-resul < 21-resulm):
-        print ("Tu ganas")
     else:
         print("Yo gano")
 juego()
