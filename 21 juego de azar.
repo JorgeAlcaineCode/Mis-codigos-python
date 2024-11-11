@@ -21,17 +21,20 @@ def juego():
             print ("mi puntuación es: "+str(resulm))
         else:
             print("Yo me planto")
+            ans == "n"
         voluntad = raw_input("Pulsa int para tirar")
         numero = int(random.random()*10)%6+1
         resul += numero
         print (str(numero))
         print ("Tu puntuación es: "+str(resul))
-        itera += 1
-        if (resul >= 21 or resul >= 21):
-            ans = "n"
-        else:
-            ans = raw_input("Sigues o No (s/n): ")
-    if (resulm > 21 or resul == 21 or 21-resul < 21-resulm):
+        if (ans == "s"):
+            if (resul >= 21 or resul >= 21):
+                ans = "n"
+            else:
+                ans = raw_input("Sigues o No (s/n): ")
+    if (resul > 21):
+        print("Yo gano")
+    elif (resulm > 21 or resul == 21 or 21-resul < 21-resulm):
         print ("Tu ganas")
     elif (resulm == resul):
         print("Empate")
