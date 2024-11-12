@@ -1,0 +1,16 @@
+def programaEsCreciente():
+    i = 0
+    interruptor = "si"
+    max_num = input("Introduce un número ")
+    while(i < 8):
+        num = input("Introduce otro número ")
+        i += 1
+        if (num < max_num):
+            interruptor = "no"
+        else:
+            max_num = num
+    if (interruptor == "si"):    
+        print("Si es creciente")
+    else:
+        print("No es creciente")
+programaEsCreciente()
