@@ -3,3 +3,8 @@ def piramide(altura):
         print(" " * (altura - i) + "*" * (2 * i - 1))
 piramide(4)
 
+def piramide(altura):
+    for i in range(altura,0,-1):
+        print("*" * altura)
+piramide(4)
+
