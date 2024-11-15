@@ -1,0 +1,27 @@
+#a
+def curvi(mayuscula):
+    if (mayuscula in "AWETIFHKLÑZXVNM"):
+        return (0)
+    else:
+        return (1)
+print(curvi("A"))
+
+#b
+def curvi_contar(mayus):
+    suma = 0
+    for cont in mayus:
+        if (cont not in "AWETIFHKLÑZXVNM"):
+            suma = suma + 1
+    print("Las letras mayusculas curvas son: ", str(suma))
+curvi_contar("LA MADRE DE MI MADRE")
+
+#c
+def curvi_sust(mayus):
+    result = " "
+    for cont in mayus:
+        if (cont not in "AWETIFHKLÑZXVNM"):
+            result += "*"
+        else:
+            result += cont
+    print(str(result))
+curvi_sust("LA MADRE DE MI MADRE")
