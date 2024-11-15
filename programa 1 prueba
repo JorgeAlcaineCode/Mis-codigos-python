@@ -9,3 +9,18 @@ def programa_1():
     print("The largest number is:",str(max_num) )
     print("The average is:",str(sum_nums/9) )
 programa_1()
+
+#Esta versión funciona con bucle while.
+def programa_2():
+    max_num = input("Introduce un número: ")
+    sum_nums = max_num
+    i = 0
+    while(i < 8):
+        num = input("Introduce otro número ")
+        sum_nums =sum_nums+ num
+        i += 1
+        if (num > max_num):
+            max_num = num
+    print("The largest number is:",str(max_num) )
+    print("The average is:",str(sum_nums/9) )
+programa_2()
