@@ -1,0 +1,19 @@
+def es_valido(direccion):
+    respuesta = True
+    if("@" not in direccion):
+        respuesta=False
+    if("." not in direccion):
+        respuesta=False
+    if(direccion.rindex("@") > direccion.rindex(".")):
+        respuesta = False
+    return(respuesta)
+def correos():
+    correo = raw_input("Introduce varias palabras separadas por comas: ")
+    lista_correos=correo.split(",")
+    for cont in lista_correos:
+        if(es_valido(cont)==True):
+            respuesta="correcto"
+        else:
+            respuesta="incorrecto"
+        print(cont +" "+str(respuesta))
+correos()
