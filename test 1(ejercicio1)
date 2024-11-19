@@ -1,0 +1,27 @@
+#Apartado 1
+def programa():
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    num3 = float(input("Enter third number: "))
+    if (num1 >= num2) and (num1 >= num3):
+        x = num1
+    else:
+        if (num2 >= num1) and (num2 >= num3):
+            x = num2
+        else:
+            x= num3
+    print (""+str(x))
+programa()
+#Apartado 2
+def programa():
+    num1 = float(input("Enter a number number: "))
+    i = 0
+    x = num1
+    while (i <= 8):
+        num1 = float(input("Enter a number number: "))
+        if (num1 >= x):
+            x = num1
+        i += 1
+    print ("Te bigguest one is: "+str(x))
+programa()
+#Apartado 3
