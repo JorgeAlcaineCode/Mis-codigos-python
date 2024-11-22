@@ -1,0 +1,18 @@
+#Le pasas un número y te dice si es perfecto
+def perfecto():
+    result = int(input("¿Que numero quieres saber si es perfecto? "))
+    verifica = result
+    ite = 2
+    lista = 1
+    while result != 1:
+        if result % ite == 0:
+            result = (result / ite)
+            lista += ite
+        else :
+            ite +=(1)
+    if (verifica == lista):
+        print(str(verifica)+" es perfecto")
+    else:
+        print(str(verifica)+" no es perfecto")
+perfecto()
+
