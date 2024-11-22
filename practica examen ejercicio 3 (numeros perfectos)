@@ -4,12 +4,14 @@ def perfecto():
     verifica = result
     ite = 2
     lista = 1
-    while result != 1:
-        if result % ite == 0:
-            result = (result / ite)
+    while (result !=ite):
+        if (verifica % ite == 0):
+            #print(str(ite))
             lista += ite
+            print(str(ite))
+            ite += 1
         else :
-            ite +=(1)
+            ite += 1
     if (verifica == lista):
         print(str(verifica)+" es perfecto")
     else:
