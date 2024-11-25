@@ -13,7 +13,6 @@ def azar_dados():
             resul_maquina += numero
             print (str(numero))
             print ("Mi puntuación es: "+str(resul_maquina))
-            espera = raw_input("Presiona cualquier tecla para continuar: ")
             itera += 1
         else:
             numero = int(random.random()*10)%6+1
@@ -21,8 +20,8 @@ def azar_dados():
             resul_jugador += numero
             print (str(numero))
             print ("Tu puntuación es: "+str(resul_jugador))
-            espera = raw_input("Presiona cualquier tecla para continuar: ")
             itera += 1
+        espera = raw_input("Presiona cualquier tecla para continuar: ")
     if (resul_jugador < resul_maquina):
         print ("Yo gano")
     elif (resul_jugador == resul_maquina):
