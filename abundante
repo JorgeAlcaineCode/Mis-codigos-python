@@ -1,0 +1,16 @@
+def abundante():
+    result = int(input("¿Que numero quieres saber si es abundante?"))
+    check = result
+    ite = 2
+    final = 1
+    while ite < result:
+        if result % ite == 0:
+            final += ite
+            ite += 1
+        else :
+            ite += 1
+    if (final > check):
+        print ("El numero es abundante")
+    else:
+        print ("El numero no es abundante")
+abundante()
